@@ -1,6 +1,22 @@
+/* Social Header */
+.social-header {
+	text-align: center;
+	padding: 12px 0 4px 0;
+	background: #f3e8ff;
+	font-size: 1.1em;
+}
+.social-header a {
+	color: #6c2eb6;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 8px;
+}
+.social-header a:hover {
+	text-decoration: underline;
+}
 /* Basic page setup */
 body {
-	font-family: Arial, sans-serif; /* Easy-to-read font */
+		font-family: 'Quicksand', Arial, sans-serif; /* Rounded, bubbly font */
 	margin: 0;
 	padding: 0;
 	background: #f3e8ff; /* Light purple background */
