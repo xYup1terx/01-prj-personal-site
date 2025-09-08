@@ -3,12 +3,12 @@ body {
 	font-family: Arial, sans-serif; /* Easy-to-read font */
 	margin: 0;
 	padding: 0;
-	background: #f4f4f4; /* Light background color */
+	background: #f3e8ff; /* Light purple background */
 }
 
 /* Navigation Bar */
 nav {
-	background: #333; /* Dark background */
+	background: #6c2eb6; /* Purple background */
 	padding: 10px 0;
 }
 nav ul {
@@ -22,14 +22,14 @@ nav ul li {
 	margin: 0 15px;
 }
 nav ul li a {
-	color: #fff; /* White text */
+	color: #f3e8ff; /* Light purple text */
 	text-decoration: none; /* Remove underline */
 	font-weight: bold;
 }
 
 /* Hero Section */
 #hero {
-	background: url('img/hero-bg.jpg') center/cover no-repeat; /* Add your image */
+	background: url('img/hero-bg.jpg') center/cover no-repeat, linear-gradient(135deg, #a259ec 0%, #6c2eb6 100%); /* Purple gradient overlay */
 	color: #fff;
 	text-align: center;
 	padding: 60px 20px;
@@ -44,22 +44,22 @@ nav ul li a {
 
 /* Bio Section */
 #bio {
-	background: #fff;
+	background: #fff0fa; /* Very light purple */
 	padding: 40px 20px;
 	text-align: center;
 }
 #bio h2 {
-	color: #333;
+	color: #6c2eb6; /* Purple heading */
 }
 
 /* Skills Section */
 #skills {
-	background: #eaeaea;
+	background: #e5d4ff; /* Light purple */
 	padding: 40px 20px;
 	text-align: center;
 }
 #skills h2 {
-	color: #333;
+	color: #6c2eb6; /* Purple heading */
 }
 #skills ul {
 	list-style: none;
@@ -67,7 +67,7 @@ nav ul li a {
 }
 #skills ul li {
 	display: inline-block;
-	background: #333;
+	background: #a259ec; /* Medium purple */
 	color: #fff;
 	margin: 5px 10px;
 	padding: 8px 16px;
@@ -76,8 +76,8 @@ nav ul li a {
 
 /* Footer Section */
 footer {
-	background: #333;
-	color: #fff;
+	background: #6c2eb6; /* Purple background */
+	color: #f3e8ff; /* Light purple text */
 	text-align: center;
 	padding: 15px 0;
 	position: relative;
