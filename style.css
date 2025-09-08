@@ -1,3 +1,40 @@
+/* Purple Star Icon for Section Headers */
+.star-icon {
+		color: #a259ec;
+		font-size: 1.5em;
+		margin: 0 12px;
+		position: relative;
+		top: 2px; /* Slightly lower for better centering */
+}
+/* Projects Section */
+#projects {
+	background: #fff0fa;
+	padding: 40px 20px;
+	text-align: center;
+}
+#projects h2 {
+	color: #6c2eb6;
+}
+.projects-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	margin-top: 24px;
+}
+.project-card {
+	background: #e5d4ff;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(60,0,90,0.08);
+	padding: 24px 32px;
+	max-width: 400px;
+	width: 100%;
+	text-align: left;
+}
+.project-card h3 {
+	margin-top: 0;
+	color: #a259ec;
+}
 /* Hero Icon Section */
 .hero-icon {
 	text-align: center;
