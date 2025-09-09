@@ -5,6 +5,8 @@
   <title>Amarea Temple Portfolio Site</title>
   <!-- Add Google Fonts: Quicksand -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Add Font Awesome for skill icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -60,29 +62,50 @@
   <section id="skills">
   <h2><span class="star-icon">&#9733;</span> My Skills <span class="star-icon">&#9733;</span></h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (soon!)</li>
-      <li>UI/UX Design (learning!)</li>
-      <li>Graphic Design</li>
-      <li>Adobe Creative Suite (Learning!)</li>
+  <li><i class="fa-brands fa-html5 skill-icon"></i> HTML</li>
+  <li><i class="fa-brands fa-css3-alt skill-icon"></i> CSS</li>
+  <li><i class="fa-brands fa-js skill-icon"></i> JavaScript (soon!)</li>
+  <li><i class="fa-solid fa-pencil skill-icon"></i> UI/UX Design (learning!)</li>
+  <li><i class="fa-solid fa-palette skill-icon"></i> Graphic Design</li>
+  <li><i class="fa-solid fa-layer-group skill-icon"></i> Adobe Creative Suite (Learning!)</li>
     </ul>
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
   <h2><span class="star-icon">&#9733;</span> My Projects <span class="star-icon">&#9733;</span></h2>
-    <div class="projects-list">
-      <!-- Example project cards for beginners -->
-      <div class="project-card">
-        <h3><a href="https://your-portfolio-card-website.com" target="_blank">Portfolio Card Website</a></h3>
-        <p>A short description of your first project goes here.</p>
+    <div class="projects-columns">
+      <!-- Left: Project Info -->
+      <div class="projects-info">
+        <h2 style="text-align:left;"><span class="star-icon">&#9733;</span> My Projects <span class="star-icon">&#9733;</span></h2>
+        <div class="projects-list">
+          <div class="project-card">
+            <h3><a href="https://your-portfolio-card-website.com" target="_blank">Portfolio Card Website</a></h3>
+            <p>A short description of your first project goes here.</p>
+          </div>
+          <div class="project-card">
+            <h3><a href="https://xyup1terx.github.io/01-pet-fostering-cta/" target="_blank">Pet Fostering Website</a></h3>
+            <p>A short description of your second project goes here.</p>
+          </div>
+          <!-- Add more projects as you build them! -->
+        </div>
       </div>
-      <div class="project-card">
-        <h3><a href="https://xyup1terx.github.io/01-pet-fostering-cta/" target="_blank">Pet Fostering Website</a></h3>
-        <p>A short description of your second project goes here.</p>
+      <!-- Vertical Divider -->
+      <div class="projects-divider"></div>
+      <!-- Right: Mirrored Section -->
+      <div class="projects-info mirrored">
+        <h2 style="text-align:left;"><span class="star-icon">&#9733;</span> More Projects <span class="star-icon">&#9733;</span></h2>
+        <div class="projects-list">
+          <div class="project-card">
+            <h3><a href="https://amareatempleafoportfolio.myportfolio.com/m" target="_blank">School Art Portfolio</a></h3>
+            <p>Works completed in various mediums during my first year at VCU School of Arts.</p>
+          </div>
+          <div class="project-card">
+            <h3><a href="#" target="_blank">Future Project 2</a></h3>
+            <p>Details about another future project or resource.</p>
+          </div>
+        </div>
       </div>
-      <!-- Add more projects as you build them! -->
     </div>
   </section>
 
@@ -99,16 +122,7 @@
 
 <!-- Care Bear Left -->
 <div class="care-bear-container" style="position: fixed; left: 10px; bottom: 10px; z-index: 100;">
-  <img src="img/care-bear-purple.gif" alt="Care Bear" class="care-bear-img" title="art by ARTIST CREDIT" id="bear-music">
+  <img src="img/care-bear-purple.gif" alt="Care Bear" class="care-bear-img"  id="bear-music">
   <div class="chat-bubble">Hey you! You should totally check out my toyhouse!</div>
 </div>
-
-<script>
-// Play YouTube video when bear is clicked
-document.getElementById('bear-music').addEventListener('click', function() {
-  var iframe = document.getElementById('bear-video');
-  // Make sure the iframe is loaded
-  iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-});
-</script>
 </html>

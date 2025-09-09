@@ -1,3 +1,75 @@
+/* Skill Icons in My Skills Section */
+.skill-icon {
+	margin-right: 8px;
+	font-size: 1.3em;
+	vertical-align: middle;
+}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		color: #fff;
+		text-shadow: 0 0 8px #a259ec;
+	}
+	100% {
+		transform: scale(1.08);
+		color: #a259ec;
+		text-shadow: 0 0 24px #a259ec;
+	}
+}
+/* My Projects Two-Column Layout with Divider */
+.projects-columns {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+		gap: 64px; /* Increase margin between columns */
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+.projects-info {
+	flex: 1;
+	text-align: left;
+	padding: 0 32px;
+}
+.projects-info h2 {
+	text-align: left;
+}
+.projects-list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	margin-top: 24px;
+}
+.project-card {
+	background: #e5d4ff;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(60,0,90,0.08);
+	padding: 24px 32px;
+	max-width: 400px;
+	width: 100%;
+	text-align: left;
+}
+.project-card h3 {
+	margin-top: 0;
+	color: #a259ec;
+}
+.projects-divider {
+	width: 2px;
+	background: linear-gradient(to bottom, #a259ec 0%, #fff0fa 100%);
+	height: 100%;
+	margin: 0 0;
+	align-self: stretch;
+	border-radius: 1px;
+}
+.projects-info.mirrored {
+	flex: 1;
+	text-align: left;
+	padding: 0 32px;
+}
 /* About Me Section Two-Column Layout */
 .bio-content {
 			display: flex;
@@ -9,7 +81,7 @@
 }
 .bio-text {
 			flex: 1;
-			text-align: right;
+			text-align: center;
 			max-width: 350px;
 			font-size: 1.1em;
 			line-height: 1.4;
@@ -24,32 +96,23 @@
   
 }
 .bio-img img {
-		width: 220px;
-		height: 220px;
-		object-fit: cover;
-		border-radius: 50%;
-				box-shadow: 0 0 16px 4px #bb98e0, 0 2px 12px rgba(60,0,90,0.10);
-    border-color: #a05dac;
-  border-width: 3px;
-  border-style: solid;
-  box-shadow: #b878f8;
-  animation: glow 3s infinite alternate;
-  @keyframes glow {
-    0% {
-      box-shadow: 0 0 8px #b878f8;
-    }
-    100% {
-      box-shadow: 0 0 16px #b878f8;
-    }
-  }
+			width: 220px;
+			height: 220px;
+			object-fit: cover;
+			border-radius: 50%;
+			box-shadow: 0 0 16px 4px #bb98e0, 0 2px 12px rgba(60,0,90,0.10);
+			border: 3px solid #a05dac;
+			animation: glow 3s infinite alternate;
 }
 /* Care Bear Chat Bubble */
 .care-bear-container {
 	display: inline-block;
 }
 .care-bear-img {
-	max-height: 300px;
-	cursor: pointer;
+		max-height: 22vh;
+		width: auto;
+		height: auto;
+		cursor: pointer;
 }
 .chat-bubble {
 	display: none;
@@ -189,7 +252,21 @@ nav ul li a {
 	margin-bottom: 10px;
 }
 #hero p {
-	font-size: 1.2em;
+	font-size: 2.0em;
+	animation: pulse 1.5s ;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		color: #fff;
+		text-shadow: 0 0 8px #a259ec;
+	}
+	100% {
+		transform: scale(1.08);
+		color: #a259ec;
+		text-shadow: 0 0 24px #e759ec;
+	}
 }
 
 /* Bio Section */
