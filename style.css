@@ -1,3 +1,48 @@
+/* About Me Section Two-Column Layout */
+.bio-content {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 32px;
+			margin-top: 24px;
+}
+.bio-text {
+			flex: 1;
+			text-align: right;
+			max-width: 350px;
+			font-size: 1.1em;
+			line-height: 1.4;
+			margin: 0;
+}
+.bio-img {
+		flex: 0 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 0;
+  
+}
+.bio-img img {
+		width: 220px;
+		height: 220px;
+		object-fit: cover;
+		border-radius: 50%;
+				box-shadow: 0 0 16px 4px #bb98e0, 0 2px 12px rgba(60,0,90,0.10);
+    border-color: #a05dac;
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: #b878f8;
+  animation: glow 3s infinite alternate;
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 8px #b878f8;
+    }
+    100% {
+      box-shadow: 0 0 16px #b878f8;
+    }
+  }
+}
 /* Care Bear Chat Bubble */
 .care-bear-container {
 	display: inline-block;
