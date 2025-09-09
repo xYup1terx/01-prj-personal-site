@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Amarea Temple Portfolio Site</title>
   <!-- Add Google Fonts: Quicksand -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -81,16 +81,27 @@
 
   <!-- Footer Section -->
   <footer id="footer">
-    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2025 [Amarea Temple].</p>
   </footer>
 </body>
-<img src="img/care-bear-purple.gif" 
-style="max-height: 300px; position: fixed; right: 10px; bottom: 10px; z-index: 100;"
-title="art by ARTIST CREDIT"
-class="tooltipster hidden-sm-down">
+<!-- Care Bear Right -->
+<div class="care-bear-container" style="position: fixed; right: 10px; bottom: 10px; z-index: 100;">
+  <img src="img/care-bear-purple.gif" alt="Care Bear" class="care-bear-img">
+  <div class="chat-bubble">Stream Sohodolls!</div>
+</div>
 
-<img src="img/care-bear-purple.gif" 
-style="max-height: 300px; position: fixed; left: 10px; bottom: 10px; z-index: 100;"
-title="art by ARTIST CREDIT"
-class="tooltipster hidden-sm-down">
+<!-- Care Bear Left -->
+<div class="care-bear-container" style="position: fixed; left: 10px; bottom: 10px; z-index: 100;">
+  <img src="img/care-bear-purple.gif" alt="Care Bear" class="care-bear-img" title="art by ARTIST CREDIT" id="bear-music">
+  <div class="chat-bubble">Hey you! You should totally check out my toyhouse!</div>
+</div>
+
+<script>
+// Play YouTube video when bear is clicked
+document.getElementById('bear-music').addEventListener('click', function() {
+  var iframe = document.getElementById('bear-video');
+  // Make sure the iframe is loaded
+  iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+});
+</script>
 </html>

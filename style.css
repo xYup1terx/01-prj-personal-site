@@ -1,3 +1,32 @@
+/* Care Bear Chat Bubble */
+.care-bear-container {
+	display: inline-block;
+}
+.care-bear-img {
+	max-height: 300px;
+	cursor: pointer;
+}
+.chat-bubble {
+	display: none;
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff0fa;
+	color: #6c2eb6;
+	padding: 12px 20px;
+	border-radius: 24px;
+	box-shadow: 0 2px 8px rgba(60,0,90,0.12);
+	font-family: 'Quicksand', Arial, sans-serif;
+	font-size: 1em;
+	min-width: 120px;
+	text-align: center;
+	z-index: 101;
+}
+.care-bear-container:hover .chat-bubble,
+.care-bear-img:hover + .chat-bubble {
+	display: block;
+}
 /* Purple Star Icon for Section Headers */
 .star-icon {
 		color: #a259ec;
@@ -61,6 +90,7 @@
 }
 .social-header a:hover {
 	text-decoration: underline;
+  color: #a05dac;
 }
 /* Basic page setup */
 body {
@@ -86,9 +116,13 @@ nav ul li {
 	margin: 0 15px;
 }
 nav ul li a {
-	color: #f3e8ff; /* Light purple text */
-	text-decoration: none; /* Remove underline */
-	font-weight: bold;
+		color: #f3e8ff; /* Light purple text */
+		text-decoration: none; /* Remove underline */
+		font-weight: bold;
+		transition: color 0.2s;
+	}
+	nav ul li a:hover {
+		color: #a259ec; /* Purple on hover */
 }
 
 /* Hero Section */
