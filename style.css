@@ -1,9 +1,51 @@
+/* Increase spacing between contact section links in the footer */
+footer a {
+	margin: 0 18px;
+}
+/* Make all images in the bio section the same size and shape */
+#bio img {
+	width: 220px;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/* Section links turn white on hover (not nav links) */
+.projects-info a:hover,
+.projects-links a:hover,
+#projects a:hover,
+#skills a:hover,
+#bio a:hover,
+#footer a:hover {
+	text-decoration: underline;
+	color: #fff !important;
+	font-weight: bold;
+}
+/* Make default blue links purple, except top nav links */
+#projects a,
+#skills a,
+#bio a,
+#footer a,
+.projects-info a,
+.projects-links a {
+	color: #a259ec;
+	text-decoration: none;
+}
+.projects-info a:hover,
+.projects-links a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+/* Make all <strong> text purple and bold */
+strong {
+	color: #a259ec;
+	font-weight: bold;
+}
 /* Skill Icons in My Skills Section */
+
 .skill-icon {
 	margin-right: 8px;
 	font-size: 1.3em;
 	vertical-align: middle;
-}
 }
 
 @keyframes pulse {
@@ -72,39 +114,38 @@
 }
 /* About Me Section Two-Column Layout */
 .bio-content {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-			gap: 32px;
-			margin-top: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	margin-top: 24px;
 }
 .bio-text {
-			flex: 1;
-			text-align: center;
-				max-width: 600px;
-			font-size: 1.1em;
-			line-height: 1.4;
-			margin: 0;
-  
-}
-.bio-img {
+		flex: 1;
+		text-align: center;
+		max-width: 600px;
+		font-size: 1.1em;
+		line-height: 1.4;
+		margin: 0;
+	}
+
+	.bio-img {
 		flex: 0 0 auto;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		margin-left: 0;
-  
-}
-.bio-img img {
-			width: 220px;
-			height: 220px;
-			object-fit: cover;
-			border-radius: 50%;
-			box-shadow: 0 0 16px 4px #bb98e0, 0 2px 12px rgba(60,0,90,0.10);
-			border: 3px solid #a05dac;
-			animation: glow 3s infinite alternate;
-}
+	}
+	.bio-img img {
+		width: 220px;
+		height: 220px;
+		object-fit: cover;
+		border-radius: 50%;
+		box-shadow: 0 0 16px 4px #bb98e0, 0 2px 12px rgba(60,0,90,0.10);
+		border: 3px solid #a05dac;
+		animation: glow 3s infinite alternate;
+	}
 /* Care Bear Chat Bubble */
 .care-bear-container {
 	display: inline-block;
